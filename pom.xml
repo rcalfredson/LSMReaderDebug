@@ -12,17 +12,17 @@
 		<relativePath />
 	</parent>
 
-	<groupId>com.mycompany</groupId>        <!-- FIXME: Your organization groupId here -->
-	<artifactId>GaussFiltering</artifactId> <!-- FIXME: Your project artifactId here   -->
+	<groupId>com.yanglab</groupId>        <!-- FIXME: Your organization groupId here -->
+	<artifactId>LSMReaderDebug</artifactId> <!-- FIXME: Your project artifactId here   -->
 	<version>0.1.0-SNAPSHOT</version>
 
-	<name>Gauss Filtering</name>                                               <!-- FIXME: Your project name here          -->
-	<description>A Maven project implementing an ImageJ command.</description> <!-- FIXME: Your project description here   -->
+	<name>LSM Reader</name>                                               <!-- FIXME: Your project name here          -->
+	<description>LSMReader with modifications for debugging.</description> <!-- FIXME: Your project description here   -->
 	<url>https://mycompany.com/imagej/gauss-filtering/</url>                   <!-- FIXME: Your project website here       -->
-	<inceptionYear>2017</inceptionYear>                                        <!-- FIXME: Your project starting year here -->
+	<inceptionYear>2024</inceptionYear>                                        <!-- FIXME: Your project starting year here -->
 	<organization>
-		<name>My Company</name>           <!-- FIXME: Your organization name here    -->
-		<url>https://mycompany.com/</url> <!-- FIXME: Your organization website here -->
+		<name>Yang Lab, Duke University</name>           <!-- FIXME: Your organization name here    -->
+		<url>https://rebeccayang.org/</url> <!-- FIXME: Your organization website here -->
 	</organization>
 	<licenses>
 		<license>                         <!-- FIXME: Your license here -->
@@ -35,9 +35,9 @@
 	<developers>
 		<!-- See https://imagej.net/Team -->
 		<developer>
-			<id>octocat</id>                                          <!-- FIXME: Your GitHub handle here -->
-			<name>Noma Onomatopoeia</name>                            <!-- FIXME: Your name here          -->
-			<url>https://mycompany.com/people/noma-onomatopoeia</url> <!-- FIXME: Your website here       -->
+			<id>rcalfredson</id>                                          <!-- FIXME: Your GitHub handle here -->
+			<name>Robert Alfredson</name>                            <!-- FIXME: Your name here          -->
+			<url></url> <!-- FIXME: Your website here       -->
 			<roles>
 				<role>founder</role>
 				<role>lead</role>
@@ -77,10 +77,10 @@
 	</ciManagement>
 
 	<properties>
-		<package-name>com.mycompany.imagej</package-name>                   <!-- FIXME: Your project package prefix here -->
-		<main-class>com.mycompany.imagej.GaussFiltering</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
+		<package-name>org.imagearchive.lsm.reader</package-name>                   <!-- FIXME: Your project package prefix here -->
+		<main-class>org.imagearchive.lsm.reader.Reader</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
 		<license.licenseName>cc0</license.licenseName>                      <!-- FIXME: Your license-maven-plugin license code here -->
-		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
+		<license.copyrightOwners>Yang Lab</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
 	</properties>
 
 	<repositories>
@@ -94,6 +94,9 @@
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej</artifactId>
+			<version>1.54f</version> <!-- Use the appropriate version -->
+    		<scope>system</scope>
+    		<systemPath>/home/tracking/Fiji.app/jars/ij-1.54f.jar</systemPath>
 		</dependency>
 	</dependencies>
 </project>
